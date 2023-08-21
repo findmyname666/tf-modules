@@ -21,7 +21,7 @@ variable "metadata" {
 }
 
 # Map elements must have the same type in Terraform.
-# We need to support here higly dynamic data.
+# We need to support here highly dynamic data.
 variable "spec" {
   type    = any
   default = null
