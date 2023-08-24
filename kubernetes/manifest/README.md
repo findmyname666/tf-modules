@@ -21,6 +21,6 @@ as input variables.
 | data | Additional data to be configured for the Kubernetes manifest. | `any` | `null` | no |
 | kind | The type of Kubernetes resource to create. | `string` | n/a | yes |
 | metadata | Metadata for the Kubernetes resource. | `any` | `null` | no |
-| spec | Map elements must have the same type in Terraform. We need to support here higly dynamic data. | `any` | `null` | no |
+| spec | Map elements must have the same type in Terraform. We need to support here highly dynamic data. | `any` | `null` | no |
 
 <!-- END_TF_DOCS -->
