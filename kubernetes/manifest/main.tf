@@ -13,4 +13,13 @@ locals {
 
 resource "kubernetes_manifest" "this" {
   manifest = local.manifest
+
+  dynamic "field_manager" {
+    for_each = var.field_manager
+
+    content {
+      force_conflicts = field_manager.value.force_conflicts
+      name            = field_manager.value.name
+    }
+  }
 }

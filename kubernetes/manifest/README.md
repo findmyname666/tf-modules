@@ -19,6 +19,7 @@ as input variables.
 |------|-------------|------|---------|:--------:|
 | api_version | The API version of the Kubernetes resource. | `string` | n/a | yes |
 | data | Additional data to be configured for the Kubernetes manifest. | `any` | `null` | no |
+| field_manager | Configure field manager options. | ```list(object({ force_conflicts = bool, name = optional(string, null), }))``` | `[]` | no |
 | kind | The type of Kubernetes resource to create. | `string` | n/a | yes |
 | metadata | Metadata for the Kubernetes resource. | `any` | `null` | no |
 | spec | Map elements must have the same type in Terraform. We need to support here highly dynamic data. | `any` | `null` | no |

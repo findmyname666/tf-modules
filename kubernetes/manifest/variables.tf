@@ -26,3 +26,12 @@ variable "spec" {
   type    = any
   default = null
 }
+
+variable "field_manager" {
+  description = "Configure field manager options."
+  type = list(object({
+    force_conflicts = bool,
+    name            = optional(string, null),
+  }))
+  default = []
+}
